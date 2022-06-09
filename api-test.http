@@ -1,0 +1,78 @@
+### 使用用户名+密码登录，获取JWT
+POST http://localhost:3001/user/login
+#POST https://notepad.icebluesakura.xyz/api/v1/user/login
+Content-Type: application/json
+
+{
+  "username": "username",
+  "password": "123456"
+}
+
+
+
+### 更新JWT密钥,续时24h
+POST https://notepad.icebluesakura.xyz/api/v1/user/jwt-refresh
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY0OTUwNTczNiwiZXhwIjoxNjQ5NTkyMTM2fQ.zdXmYMuY6lBwqCrxyrWDimOOBq8YXAdZxBoFQO4xpU8
+
+
+
+
+### 查询当前登录用户信息
+GET https://notepad.icebluesakura.xyz/api/v1/user
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY1MTUxMDY3MywiZXhwIjoxNjUxNTk3MDczfQ.PWzUTa8JWCS0e9Ngh7t__CU_fumOHqlvwxtEDwpGkVs
+
+
+
+### 根据用户名更新用户信息
+POST https://notepad.icebluesakura.xyz/api/v1/user/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY0OTUwNTczNiwiZXhwIjoxNjQ5NTkyMTM2fQ.zdXmYMuY6lBwqCrxyrWDimOOBq8YXAdZxBoFQO4xpU8
+
+
+
+
+### 注册用户
+POST https://notepad.icebluesakura.xyz/api/v1/user/register
+#POST https://notepad.icebluesakura.xyz/api/v1/reducer/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY0OTUwNTczNiwiZXhwIjoxNjQ5NTkyMTM2fQ.zdXmYMuY6lBwqCrxyrWDimOOBq8YXAdZxBoFQO4xpU8
+
+{
+  "username": "username",
+  "password": "123456",
+  "nickname": "nickname",
+  "avatar": "null"
+}
+
+
+
+
+### 查询当前登录用户的特定文章
+GET https://notepad.icebluesakura.xyz/api/v1/note/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY1MTIwOTYwOSwiZXhwIjoxNjUxMjk2MDA5fQ.fjpH9vKAHz8RXQm5QHU62w63FYatvUIpeiMhiZu0lxs
+
+
+
+### 创建文章
+#POST https://notepad.icebluesakura.xyz/api/v1/note/create
+POST https://notepad.icebluesakura.xyz/api/v1/note/create
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY1MTMyNzg4MiwiZXhwIjoxNjUxNDE0MjgyfQ.92TYqsgsgZvmygnLYPzfXH8f9oFgl4N5sfDngJP6yh0
+
+{
+  "title": "记事项2",
+  "content": "<h2>Second</h2>",
+  "content_type": "html",
+  "author_id": 1
+}
+
+
+
+### 获取用户所有文章
+#POST https://notepad.icebluesakura.xyz/api/v1/note
+GET https://notepad.icebluesakura.xyz/api/v1//note
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJ1c2VybmFtZSIsImlhdCI6MTY1MjEwODM3NiwiZXhwIjoxNjUyMTk0Nzc2fQ.S6YUeoqSQ_DcBtj5hAyG6fMQQskso-Zy-n0Ler_qSuo

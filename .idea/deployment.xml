@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="icebluesakura.xyz" exclude=".svn;.cvs;.idea;.DS_Store;.git;.hg;*.hprof;*.pyc;" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="icebluesakura.xyz">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/notepad" local="$PROJECT_DIR$" web="https://notepad.icebluesakura.xyz" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/notepad/node_modules" />
+            <excludedPath path="/notepad/.next" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
