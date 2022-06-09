@@ -38,3 +38,15 @@ yarn-error.log*
 **/public/workbox-*.js
 **/public/sw.js
 **/public/worker-*.js
+
+### IntelliJ WebStorm ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+pnpm-lock.yaml
+

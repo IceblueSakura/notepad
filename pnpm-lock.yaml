@@ -19,6 +19,7 @@ specifiers:
   localforage: ^1.10.0
   next: 12.1.6
   next-pwa: ^5.5.2
+  notepad: 'link:'
   react: 18.1.0
   react-dom: 18.1.0
   react-redux: ^8.0.1
@@ -40,6 +41,7 @@ dependencies:
   localforage: 1.10.0
   next: 12.1.6_6j5eyi3us3liopewjenwniphpy
   next-pwa: 5.5.2_bdhknokrh4d5ypzypsjqvd6hqu
+  notepad: 'link:'
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-redux: 8.0.2_3vjunwlmc3akvx5gzli76tirsm
